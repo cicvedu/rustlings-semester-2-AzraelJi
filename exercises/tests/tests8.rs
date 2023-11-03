@@ -13,12 +13,14 @@ fn main() {}
 
 #[cfg(test)]
 mod tests {
+    #[allow(unused_imports)]
     use super::*;
 
     #[test]
     fn test_success() {
         #[cfg(feature = "pass")]
-        panic!("no cfg set");
         return;
+        panic!("no cfg set");
+
     }
 }
